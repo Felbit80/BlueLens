@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-    <header class="container-fluid py-3">
+    <header class="container-fluid py-3 bg-white fixed-top">
         <div class="row">
             <div class="col-6 col-sm-4 d-flex justify-content-center align-items-center">
                 <img src="../assets/imgs/logo.png" alt="Logo" height="40vw" width="40vw" class="rounded-3 mx-2 d-sm-block d-none">
@@ -18,13 +18,13 @@
             </div>
             <div class="col-6 col-sm-8 d-flex align-content-center justify-content-center ps-5 pe-0 navbar-direita">
                 <div class="btn-group d-md-block d-none">
-                    <button class="btn py-0 mt-3">Início</button>
-                    <button class="btn py-0 mt-3">Tecnologia</button>
-                    <button class="btn py-0 mt-3">Benefícios</button>
-                    <button class="btn py-0 mt-3">Pesquisa</button>
-                    <button class="btn py-0 mt-3">Contato</button>
+                    <button class="btn pb-0 mt-1">Início</button>
+                    <button class="btn pb-0 mt-1">Tecnologia</button>
+                    <button class="btn pb-0 mt-1">Benefícios</button>
+                    <button class="btn pb-0 mt-1">Pesquisa</button>
+                    <button class="btn pb-0 mt-1">Contato</button>
                 </div>
-                <div class="btn-group navbar-dropdown d-block d-md-none"> <!--Navbar de Páginas para tela pequena-->
+                <div class="btn-group navbar-dropdown d-block d-md-none mt-1">
                     <button class="btn btn-lg dropdown-toggle btn-navbar-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Início
                     </button>
@@ -40,13 +40,46 @@
         </div>
     </header>
     <main class="container-fluid">
-        <div class="row">
-
-        </div>
+        <section class="row d-flex justify-content-center py-4" id="inicio">
+            <div class="col-12 col-md-6 col-inicio-esquerda d-flex flex-column justify-content-center">
+            <h1 class="text-white" id="h1-inicio">Revolucionando a proteção ocular com tecnologia Blue Care</h1>
+            <p class="text-white" id="p-inicio">Desenvolvemos lentes de contato inovadoras que protegem seus olhos da luz azul nociva emitida por dispositivos digitais.</p>
+            <div class="row botoes-inicio d-flex justify-content-between d-flex flex-sm-row flex-column">
+                <button class="col-sm-6 col-12 btn my-1 my-sm-0 py-3 px-2 btn-1 bg-white">Conheça nossa tecnologia</button>
+                <button class="col-sm-5 col-12 btn my-1 my-sm-0 py-3 px-4 btn-2">Entrar em contato</button>
+            </div>
+            </div>
+            <div class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center">
+            <img src="../assets/imgs/logo.png" alt="" class="img-inicio mt-3">
+            </div>
+        </section>
+        <section id="tecnologia">
+            <div class="row">
+                <h1 class="titulo-tecnologia text-center px-2 pt-5">Nossa Tecnologia Blue Care</h1>
+                <p class="text-center d-block mx-auto py-2">Combinamos ciência de ponta e inovação para criar lentes de contato que filtram seletivamente a luz azul nociva, mantendo a visão natural e protegendo seus olhos.</p>
+            </div>
+            <div class="row py-md-5 py-3 px-lg-4 px-3 d-flex flex-column flex-lg-row justify-content-evenly">
+                <div class="col-lg-3 col-12 card-tecnologia mx-0 my-2 my-lg-0 border rounded-2 p-4 d-flex flex-column justify-content-center">
+                    <div class="icon-circle rounded-circle d-flex align-items-center justify-content-center mt-2"><img src="../assets/imgs/iconEscudo.png" alt="" height="50px" width="50px"></div>
+                    <h3 class="pt-3 titulo-tecnologia">Filtro seletivo</h3>
+                    <p class="p-card">Nossa tecnologia patenteada filtra apenas os comprimentos de onda nocivos da luz azul, preservando a percepção natural das cores.</p>
+                </div>
+                <div class="col-lg-3 col-12 card-tecnologia mx-0 my-2 my-lg-0 border rounded-2 p-4 d-flex flex-column justify-content-center">
+                    <div class="icon-circle rounded-circle d-flex align-items-center justify-content-center mt-2"><img src="../assets/imgs/iconEscudo.png" alt="" height="50px" width="50px"></div>
+                    <h3 class="pt-3 titulo-tecnologia">Material Avançado</h3>
+                    <p class="p-card">Desenvolvemos um polímero de alta permeabilidade ao oxigênio que integra moléculas de filtro azul sem comprometer o conforto.</p>
+                </div>
+                <div class="col-lg-3 col-12 card-tecnologia mx-0 my-2 my-lg-0 border rounded-2 p-4 d-flex flex-column justify-content-center">
+                    <div class="icon-circle rounded-circle d-flex align-items-center justify-content-center mt-2"><img src="../assets/imgs/iconEscudo.png" alt="" height="50px" width="50px"></div>
+                    <h3 class="pt-3 titulo-tecnologia">Inovação Constante</h3>
+                    <p class="p-card">Nossa equipe de cientistas trabalha continuamente para aprimorar a tecnologia, aumentando a eficácia e o conforto das lentes.</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="container-fluid">
         <div class="row">
-
+            
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
