@@ -163,3 +163,31 @@
     height: 60px;
     background-color: #DBEAFE;
 }
+
+#pesquisa {
+    height: auto;
+    background-color: #ffffff;
+}
+
+.titulo-pesquisa {
+    color: #1E40AF;
+}
+
+#pesquisa-nums {
+    background-color: #EFF6FF;
+    box-shadow: 0 0 10px 7px #9bb9e083;
+}
+
+#pesquisa-nums .col-5 {
+    background-color: white;
+}
+
+.titulo-pesquisa {
+    color: #3471DD;
+}
+
+.p-card-pesquisa {
+    font-size: 14px;
+    font: var(--fonte-secundaria);
+    color: rgb(89, 89, 89);
+}
