@@ -134,3 +134,32 @@
     font-size: 18px;
     color: rgb(89, 89, 89);
 }
+
+#beneficios {
+    min-height: 600px;
+    height: auto;
+    background-color: #EFF6FF;
+}
+
+.titulo-beneficios {
+    color: #1E40AF;
+}
+
+#beneficios p.text-center {
+    font: var(--fonte-secundaria);
+    max-width: 900px;
+    font-size: 18px;
+    color: rgb(89, 89, 89);
+}
+
+.card-beneficios {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.232);
+    background-color: white;
+    height: auto;
+}
+
+.icon-circle-beneficios {
+    width: 60px;
+    height: 60px;
+    background-color: #DBEAFE;
+}
