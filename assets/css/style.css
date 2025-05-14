@@ -125,7 +125,6 @@
 .card-tecnologia:hover {
     transform: translateY(-10px);
     box-shadow: 0px 4px 15px #3472dd36;
-    
 }
 
 .p-card {
@@ -174,6 +173,7 @@
 }
 
 #pesquisa-nums {
+    min-height: 550px;
     background-color: #EFF6FF;
     box-shadow: 0 0 10px 7px #9bb9e083;
 }
@@ -182,7 +182,7 @@
     background-color: white;
 }
 
-.titulo-pesquisa {
+.num-pesquisa {
     color: #3471DD;
 }
 
@@ -190,4 +190,61 @@
     font-size: 14px;
     font: var(--fonte-secundaria);
     color: rgb(89, 89, 89);
+}
+
+#especialistas {
+    background-color: #1E40AF;
+}
+
+.p-especialistas {
+    font: var(--fonte-secundaria);
+    color: rgb(241, 241, 241);
+}
+
+.card-especialistas {
+    background-color: #E6F5FE;
+}
+
+.icon-circle-especialistas {
+    height: 45px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #BFDBFE;
+}
+
+#contato {
+    background-color: white;
+    min-height: 500px;
+}
+
+.icon-circle-midias {
+    height: 50px;
+    width: 50px;
+    background-color: #BFDBFE;
+    transition: 0.25s;
+}
+.icon-circle-midias:hover {
+    background-color: #91c3ff;
+}
+
+#mensagem {
+    background-color: #EFF6FF;
+}
+
+form {
+  background-color: #f0f7ff;
+  border-radius: 0.5rem;
+}
+
+input,
+textarea {
+  border: 1px solid #cfe2ff;
+}
+
+textarea {
+  resize: none;
+}
+
+.p-form {
+    font: var(--fonte-secundaria);
 }
