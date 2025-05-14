@@ -248,3 +248,20 @@ textarea {
 .p-form {
     font: var(--fonte-secundaria);
 }
+
+.footer-bg {
+  background-color: #1d378b; /* Azul escuro */
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.p-form-footer {
+    font: var(--fonte-secundaria);
+    opacity: 70%;
+    transition: 0.25s;
+}
+a.p-form-footer:hover {
+    opacity: 100%;
+}

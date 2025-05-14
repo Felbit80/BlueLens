@@ -18,22 +18,22 @@
             </div>
             <div class="col-6 col-sm-8 d-flex align-content-center justify-content-center ps-5 pe-0 navbar-direita">
                 <div class="btn-group d-md-block d-none">
-                    <button class="btn pb-0 mt-1">Início</button>
-                    <button class="btn pb-0 mt-1">Tecnologia</button>
-                    <button class="btn pb-0 mt-1">Benefícios</button>
-                    <button class="btn pb-0 mt-1">Pesquisa</button>
-                    <button class="btn pb-0 mt-1">Contato</button>
+                    <button class="btn pb-0 mt-1" onclick="document.getElementById('inicio').scrollIntoView({ behavior: 'smooth' });">Início</button>
+                    <button class="btn pb-0 mt-1" onclick="document.getElementById('tecnologia').scrollIntoView({ behavior: 'smooth' });">Tecnologia</button>
+                    <button class="btn pb-0 mt-1" onclick="document.getElementById('beneficios').scrollIntoView({ behavior: 'smooth' });">Benefícios</button>
+                    <button class="btn pb-0 mt-1" onclick="document.getElementById('pesquisa').scrollIntoView({ behavior: 'smooth' });">Pesquisa</button>
+                    <button class="btn pb-0 mt-1" onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Contato</button>
                 </div>
                 <div class="btn-group navbar-dropdown d-block d-md-none mt-1">
                     <button class="btn btn-lg dropdown-toggle btn-navbar-dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Início
                     </button>
                     <ul class="dropdown-menu dropdown-links pt-0">
-                        <button class="btn py-0 mt-3">Início</button>
-                        <button class="btn py-0 mt-3">Tecnologia</button>
-                        <button class="btn py-0 mt-3">Benefícios</button>
-                        <button class="btn py-0 mt-3">Pesquisa</button>
-                        <button class="btn py-0 mt-3">Contato</button>
+                        <button class="btn pb-0 mt-1" onclick="document.getElementById('inicio').scrollIntoView({ behavior: 'smooth' });">Início</button>
+                        <button class="btn pb-0 mt-1" onclick="document.getElementById('tecnologia').scrollIntoView({ behavior: 'smooth' });">Tecnologia</button>
+                        <button class="btn pb-0 mt-1" onclick="document.getElementById('beneficios').scrollIntoView({ behavior: 'smooth' });">Benefícios</button>
+                        <button class="btn pb-0 mt-1" onclick="document.getElementById('pesquisa').scrollIntoView({ behavior: 'smooth' });">Pesquisa</button>
+                        <button class="btn pb-0 mt-1" onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });">Contato</button>
                     </ul>
                 </div>
             </div>
@@ -197,11 +197,11 @@
                             <img src="../assets/imgs/iconUser.png" alt="" height="30px" width="30px">
                         </div>
                         <div class="d-flex flex-column col">
-                            <h6 class="titulo-pesquisa">Profa. Dra. Carla Mendes</h6>
-                            <p class="p-card-pesquisa">Universidade Federal de Oftalmologia</p>
+                            <h6 class="titulo-pesquisa">Dr. Ricardo Almeida</h6>
+                            <p class="p-card-pesquisa">Pesquisador, Instituto de Visão</p>
                         </div>
                     </div>
-                    <p class="p-card-pesquisa">"A abordagem inovadora da OptiBlue para filtrar seletivamente a luz azul nociva, mantendo a percepção natural das cores, é um diferencial importante no mercado."</p>
+                    <p class="p-card-pesquisa">"Os estudos que conduzimos mostram uma redução significativa na fadiga ocular e melhora do conforto visual em usuários das lentes com tecnologia Blue Care."</p>
                 </div>
                  <div class="col-lg-3 col-12 card-especialistas mx-2 my-2 my-lg-0 border rounded-2 p-4 d-flex flex-column justify-content-center">
                     <div class="row">
@@ -269,20 +269,20 @@
                     <form class="rounded">
                         <div class="row g-3 mb-3">
                             <div class="col-12 col-md-6">
-                            <label for="nome" class="form-label p-form">Nome</label>
+                            <label for="nome" class="form-label p-form-footer">Nome</label>
                             <input type="text" class="form-control" id="nome" placeholder="">
                             </div>
                             <div class="col-12 col-md-6">
-                            <label for="email" class="form-label p-form">Email</label>
+                            <label for="email" class="form-label p-form-footer">Email</label>
                             <input type="email" class="form-control" id="email" placeholder="">
                             </div>
                         </div>
                         <div class="mb-3">
-                            <label for="assunto" class="form-label p-form">Assunto</label>
+                            <label for="assunto" class="form-label p-form-footer">Assunto</label>
                             <input type="text" class="form-control" id="assunto" placeholder="">
                         </div>
                         <div class="mb-3">
-                            <label for="mensagem" class="form-label p-form">Mensagem</label>
+                            <label for="mensagem" class="form-label p-form-footer">Mensagem</label>
                             <textarea class="form-control bg-white" id="mensagem" rows="3" placeholder="" maxlength="200"></textarea>
                         </div>
                     </form>
@@ -291,8 +291,49 @@
             </div>
         </section>
     </main>
-    <footer class="container-fluid">
-    
+    <footer class="text-white pt-5 pb-3 footer-bg">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-12 col-md-3">
+                    <h5 class="mb-2 d-flex align-items-center">
+                        <img src="../assets/imgs/logo.png" alt="" class="rounded-3 me-2" height="40px" width="40px">
+                        BlueLens
+                    </h5>
+                    <p class="small p-form-footer">
+                    Revolucionando a proteção ocular com tecnologia Blue Care em lentes de contato.
+                    </p>
+                    <p class="small p-form-footer mb-0">© 2025 BlueLens. Todos os direitos reservados.</p>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="pb-3 pt-1">Links Rápidos</h6>
+                    <ul class="list-unstyled small">
+                    <li class="py-1"><a href="#" class="text-white text-decoration-none p-form-footer">Início</a></li>
+                    <li class="py-1"><a href="#" class="text-white text-decoration-none p-form-footer">Tecnologia</a></li>
+                    <li class="py-1"><a href="#" class="text-white text-decoration-none p-form-footer">Benefícios</a></li>
+                    <li class="py-1"><a href="#" class="text-white text-decoration-none p-form-footer">Pesquisa</a></li>
+                    <li class="py-1"><a href="#" class="text-white text-decoration-none p-form-footer">Contato</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-3">
+                    <h6 class="pb-3 pt-1">Recursos</h6>
+                    <ul class="list-unstyled small">
+                    <li class="py-1"><a href="#" class="text-white text-decoration-none p-form-footer">Artigos Científicos</a></li>
+                    <li class="py-1"><a href="#" class="text-white text-decoration-none p-form-footer">Estudos de Caso</a></li>
+                    <li class="py-1"><a href="#" class="text-white text-decoration-none p-form-footer">FAQ</a></li>
+                    <li class="py-1"><a href="#" class="text-white text-decoration-none p-form-footer">Glossário</a></li>
+                    <li class="py-1"><a href="#" class="text-white text-decoration-none p-form-footer">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h6 class="pb-3 pt-1">Newsletter</h6>
+                    <p class="small p-form-footer">Inscreva-se para receber as últimas novidades sobre nossa tecnologia e pesquisas.</p>
+                    <form class="d-flex">
+                    <input type="email" class="form-control rounded-start" placeholder="Seu email">
+                    <button type="submit" class="btn btn-primary rounded-end px-4">OK</button>
+                    </form>
+                </div>
+            </div>
+        </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"></script>
 </body>
