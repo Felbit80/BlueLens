@@ -330,34 +330,159 @@
           class="row py-md-5 py-3 px-lg-4 px-3 d-flex flex-column flex-lg-row justify-content-center"
         >
           <div
-            class="card-produto my-2 mx-lg-0 col-12 bg-white rounded-3 col-lg-3 p-2 p-md-4 mx-0 mx-lg-2"
+            id="produtosCarousel"
+            class="carousel slide w-100"
+            data-bs-ride="carousel"
           >
-            <div class="img-produto-lentes rounded-3 mb-2"></div>
-            <h3 class="titulo-produto">Lentes de Contato</h3>
-            <p class="desc-produto">
-                Lentes de contato com tecnologia Blue Care: filtram a luz azul de telas digitais, oferecem proteção ocular, conforto prolongado e ajudam a reduzir a fadiga visual, mantendo a visão natural das cores.
-            </p>
-            <button class="btn btn-primary w-100">Comprar</button>
-          </div>
-          <div
-            class="card-produto my-2 mx-lg-0 col-12 bg-white rounded-3 col-lg-3 p-2 p-md-4 mx-0 mx-lg-2"
-          >
-            <div class="img-produto-lubrificante rounded-3 mb-2"></div>
-            <h3 class="titulo-produto">Lubrificante Ocular</h3>
-            <p class="desc-produto">
-                Lubrificante ocular desenvolvido para usuários de lentes de contato: alivia o ressecamento, proporciona hidratação imediata e prolongada, e ajuda a manter o conforto dos olhos durante o uso de dispositivos digitais.
-            </p>
-            <button class="btn btn-primary w-100">Comprar</button>
-          </div>
-          <div
-            class="card-produto my-2 mx-lg-0 col-12 bg-white rounded-3 col-lg-3 p-2 p-md-4 mx-0 mx-lg-2"
-          >
-            <div class="img-produto-combo rounded-3 mb-2"></div>
-            <h3 class="titulo-produto">Combo BlueLens</h3>
-            <p class="desc-produto">
-                Combo especial com lentes de contato Blue Care e lubrificante ocular: proteção completa contra luz azul, conforto prolongado e hidratação para seus olhos durante o uso de dispositivos digitais.
-            </p>
-            <button class="btn btn-primary w-100">Comprar</button>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="card-produto bg-white rounded-3 p-2 p-md-4 mx-2 flex-fill"
+                    style="max-width: 700px; min-width: 320px"
+                  >
+                    <div class="row align-items-center">
+                      <div class="col-md-7 col-12 order-2 order-md-1">
+                        <h3 class="titulo-produto">Lentes de Contato</h3>
+                        <p class="desc-produto">
+                          Lentes de contato com tecnologia Blue Care: filtram a
+                          luz azul de telas digitais, oferecem proteção ocular,
+                          conforto prolongado e ajudam a reduzir a fadiga
+                          visual, mantendo a visão natural das cores.
+                        </p>
+                        <span
+                          class="preco-produto titulo-produto d-block mb-2"
+                          style="font-size: 1.3rem"
+                          >R$ 149,90</span
+                        >
+                        <button class="btn btn-primary w-100 w-md-auto">
+                          Comprar
+                        </button>
+                      </div>
+                      <div
+                        class="col-md-5 col-12 order-1 order-md-2 mb-3 mb-md-0 d-flex justify-content-center"
+                      >
+                        <div
+                          class="img-produto-lentes rounded-3"
+                          style="
+                            width: 100%;
+                            min-height: 160px;
+                            max-width: 180px;
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="card-produto bg-white rounded-3 p-2 p-md-4 mx-2 flex-fill"
+                    style="max-width: 700px; min-width: 320px"
+                  >
+                    <div class="row align-items-center">
+                      <div class="col-md-7 col-12 order-2 order-md-1">
+                        <h3 class="titulo-produto">Lubrificante Ocular</h3>
+                        <p class="desc-produto">
+                          Lubrificante ocular desenvolvido para usuários de
+                          lentes de contato: alivia o ressecamento, proporciona
+                          hidratação imediata e prolongada, e ajuda a manter o
+                          conforto dos olhos durante o uso de dispositivos
+                          digitais.
+                        </p>
+                        <span
+                          class="preco-produto titulo-produto d-block mb-2"
+                          style="font-size: 1.3rem"
+                          >R$ 99,90</span
+                        >
+                        <button class="btn btn-primary w-100 w-md-auto">
+                          Comprar
+                        </button>
+                      </div>
+                      <div
+                        class="col-md-5 col-12 order-1 order-md-2 mb-3 mb-md-0 d-flex justify-content-center"
+                      >
+                        <div
+                          class="img-produto-lubrificante rounded-3"
+                          style="
+                            width: 100%;
+                            min-height: 160px;
+                            max-width: 180px;
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="d-flex justify-content-center">
+                  <div
+                    class="card-produto bg-white rounded-3 p-2 p-md-4 mx-2 flex-fill"
+                    style="max-width: 700px; min-width: 320px"
+                  >
+                    <div class="row align-items-center">
+                      <div class="col-md-7 col-12 order-2 order-md-1">
+                        <h3 class="titulo-produto">Combo BlueLens</h3>
+                        <p class="desc-produto">
+                          Combo especial com lentes de contato Blue Care e
+                          lubrificante ocular: proteção completa contra luz
+                          azul, conforto prolongado e hidratação para seus olhos
+                          durante o uso de dispositivos digitais.
+                        </p>
+                        <span
+                          class="preco-produto titulo-produto d-block mb-2"
+                          style="font-size: 1.3rem"
+                          >R$ 199,90</span
+                        >
+                        <button class="btn btn-primary w-100 w-md-auto">
+                          Comprar
+                        </button>
+                      </div>
+                      <div
+                        class="col-md-5 col-12 order-1 order-md-2 mb-3 mb-md-0 d-flex justify-content-center"
+                      >
+                        <div
+                          class="img-produto-combo rounded-3"
+                          style="
+                            width: 100%;
+                            min-height: 160px;
+                            max-width: 180px;
+                          "
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#produtosCarousel"
+              data-bs-slide="prev"
+              style="background: none"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Anterior</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#produtosCarousel"
+              data-bs-slide="next"
+              style="background: none"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Próximo</span>
+            </button>
           </div>
         </div>
       </section>
