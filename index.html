@@ -327,7 +327,7 @@
           <h1 class="text-center px-2 pt-3 pt-lg-5 text-white">Produtos</h1>
         </div>
         <div
-          class="row py-md-5 py-3 px-lg-4 px-3 d-flex flex-column flex-lg-row justify-content-center"
+          class="row py-md-5 py-3 px-lg-4 px-0 d-flex flex-column flex-lg-row justify-content-center"
         >
           <div
             id="produtosCarousel"
@@ -338,7 +338,7 @@
               <div class="carousel-item active">
                 <div class="d-flex justify-content-center">
                   <div
-                    class="card-produto bg-white rounded-3 p-2 p-md-4 mx-2 flex-fill"
+                    class="card-produto bg-white rounded-3 p-3 p-md-4 mx-2 mx-0 flex-fill"
                     style="max-width: 700px; min-width: 320px"
                   >
                     <div class="row align-items-center">
@@ -378,7 +378,7 @@
               <div class="carousel-item">
                 <div class="d-flex justify-content-center">
                   <div
-                    class="card-produto bg-white rounded-3 p-2 p-md-4 mx-2 flex-fill"
+                    class="card-produto bg-white rounded-3 p-3 p-md-4 mx-2 flex-fill"
                     style="max-width: 700px; min-width: 320px"
                   >
                     <div class="row align-items-center">
@@ -419,7 +419,7 @@
               <div class="carousel-item">
                 <div class="d-flex justify-content-center">
                   <div
-                    class="card-produto bg-white rounded-3 p-2 p-md-4 mx-2 flex-fill"
+                    class="card-produto bg-white rounded-3 p-3 p-md-4 mx-2 flex-fill"
                     style="max-width: 700px; min-width: 320px"
                   >
                     <div class="row align-items-center">
@@ -457,32 +457,34 @@
                 </div>
               </div>
             </div>
-            <button
-              class="carousel-control-prev"
-              type="button"
-              data-bs-target="#produtosCarousel"
-              data-bs-slide="prev"
-              style="background: none"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Anterior</span>
-            </button>
-            <button
-              class="carousel-control-next"
-              type="button"
-              data-bs-target="#produtosCarousel"
-              data-bs-slide="next"
-              style="background: none"
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="visually-hidden">Próximo</span>
-            </button>
+            <div class="carouselButtons">
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#produtosCarousel"
+                data-bs-slide="prev"
+                style="background: none"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#produtosCarousel"
+                data-bs-slide="next"
+                style="background: none"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -801,7 +803,8 @@
                     type="text"
                     class="form-control"
                     id="nome"
-                    placeholder=""
+                    placeholder="Nome completo"
+                    required
                   />
                 </div>
                 <div class="col-12 col-md-6">
@@ -812,7 +815,8 @@
                     type="email"
                     class="form-control"
                     id="email"
-                    placeholder=""
+                    placeholder="Seu email"
+                    required
                   />
                 </div>
               </div>
@@ -824,7 +828,7 @@
                   type="text"
                   class="form-control"
                   id="assunto"
-                  placeholder=""
+                  required
                 />
               </div>
               <div class="mb-3">
@@ -835,12 +839,12 @@
                   class="form-control bg-white"
                   id="mensagem"
                   rows="3"
-                  placeholder=""
                   maxlength="200"
+                  required
                 ></textarea>
               </div>
+              <input type="submit" class="btn btn-primary w-100" value="Enviar mensagem" />
             </form>
-            <button class="btn btn-primary">Enviar mensagem</button>
           </div>
         </div>
       </section>
@@ -872,36 +876,36 @@
             <ul class="list-unstyled small">
               <li class="py-1">
                 <a
-                  href="#"
                   class="text-white text-decoration-none p-form-footer"
+                  onclick="document.getElementById('inicio').scrollIntoView({ behavior: 'smooth' });"
                   >Início</a
                 >
               </li>
               <li class="py-1">
                 <a
-                  href="#"
                   class="text-white text-decoration-none p-form-footer"
+                  onclick="document.getElementById('tecnologia').scrollIntoView({ behavior: 'smooth' });"
                   >Tecnologia</a
                 >
               </li>
               <li class="py-1">
                 <a
-                  href="#"
                   class="text-white text-decoration-none p-form-footer"
+                  onclick="document.getElementById('beneficios').scrollIntoView({ behavior: 'smooth' });"
                   >Benefícios</a
                 >
               </li>
               <li class="py-1">
                 <a
-                  href="#"
                   class="text-white text-decoration-none p-form-footer"
+                  onclick="document.getElementById('pesquisa').scrollIntoView({ behavior: 'smooth' });"
                   >Pesquisa</a
                 >
               </li>
               <li class="py-1">
                 <a
-                  href="#"
                   class="text-white text-decoration-none p-form-footer"
+                  onclick="document.getElementById('contato').scrollIntoView({ behavior: 'smooth' });"
                   >Contato</a
                 >
               </li>
@@ -958,6 +962,7 @@
                 type="email"
                 class="form-control rounded-start"
                 placeholder="Seu email"
+                required
               />
               <button type="submit" class="btn btn-primary rounded-end px-4">
                 OK

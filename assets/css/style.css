@@ -268,7 +268,7 @@ a.p-form-footer:hover {
 }
 
 .card-produto {
-  min-width: 280px;
+  min-width: 240px;
 }
 
 .img-produto-lentes {
@@ -292,3 +292,75 @@ a.p-form-footer:hover {
     background-size: cover;
     background-position: center center;
 }
+
+a {
+  cursor: pointer;
+}
+
+
+#produtosCarousel {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.card-produto {
+  flex: 1 1 300px;
+  max-width: 700px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 40px;
+  height: 40px;
+  top: 50%;
+  transform: translateY(-380%);
+  z-index: 2;
+}
+
+.carousel-control-prev {
+  left: -10px;
+}
+
+.carousel-control-next {
+  right: -10px;
+}
+
+@media (max-width: 576px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    left: 0;
+    right: 0;
+  }
+}
+
+.row,
+.carousel-inner {
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Container das setas (no HTML: <div class="carouselButtons">) */
+.carouselButtons {
+  position: relative;
+}
+
+/* Layout mobile: setas abaixo do carrossel */
+@media (max-width: 768px) {
+  .carousel-control-prev,
+  .carousel-control-next {
+    position: static;
+    transform: none;
+    margin: 0 0.5rem;
+  }
+
+  .carouselButtons {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+}
+
